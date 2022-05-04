@@ -25,6 +25,7 @@
     </com.google.android.material.appbar.AppBarLayout>
 
     <TextView
+        android:id="@+id/text_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/app_name"
@@ -32,5 +33,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout" />
+
+    <EditText
+        android:id="@+id/preftext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="79dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/prefButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="savePref"
+        android:text="@string/save"
+        tools:layout_editor_absoluteX="161dp"
+        tools:layout_editor_absoluteY="124dp"
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
