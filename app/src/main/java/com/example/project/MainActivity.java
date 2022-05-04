@@ -34,9 +34,7 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedPreferences.Editor editor = preferences.edit();
-                editor.putString("name", edit_name.getText().toString());
-                editor.apply();
+                getIntent()
             }
         });
 
