@@ -51,4 +51,3 @@ public class SecondActivity extends AppCompatActivity {
         text_name.setText(name);
     }
 }
-
