@@ -20,7 +20,7 @@ public class SecondActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_second);
 
 
         text_name = findViewById(R.id.text_name);
@@ -40,14 +40,5 @@ public class SecondActivity extends AppCompatActivity {
         });
 
 
-    }
-
-
-    @Override
-    protected void onResume() {
-        super.onResume();
-
-        String name = preferences.getString("name", "cant get name");
-        text_name.setText(name);
     }
 }
